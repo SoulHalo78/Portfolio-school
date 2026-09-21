@@ -1,0 +1,317 @@
+.profile-photo {
+  width: 180px;              /* Resize */
+  height: auto;
+  border-radius: 8px;        /* Soft rounded corners */
+  border: 2px solid #ccc;  /* Subtle border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);  /* Soft shadow for depth */
+  display: block;
+  margin: 20px auto;         /* Centered */
+  max-width: 100%;           /* Responsive */
+}
+
+.hero {
+  text-align: center;        /* Centered text */
+  padding: 20px 20px;        /* Spacing */
+  background-color: #ffffff; /* Light background */
+  border-radius: 12px;        /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 10px;          /* Spacing below */
+  line-height: 1.6;             /* Improve readability */
+}
+
+.snapshot {
+  max-width: 900px;          /* Limit width for readability */
+  margin: 20px auto;         /* Centered */
+  padding: 25px;             /* Spacing */
+  background-color: #ffffff; /* Light background */
+  border-radius: 12px;        /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  line-height: 1.8;             /* Improve readability */
+}
+
+.cta-button,
+.hero button {
+    background: #357ABD; 
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.cta-button:hover,
+.hero button:hover {
+    background: #285f8f;
+    transform: scale(1.05);
+}
+
+/* Home Page section headers */
+.hero h2,
+.snapshot h3,
+.featured h3 {
+    text-decoration: underline;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.resume-section {
+  margin: 20px auto;            /* Centered */
+  padding: 20px;                /* Spacing */
+  background-color: #f9f9f9;  /* Light background */
+  border-radius: 8px;           /* Rounded corners */
+  border: 1px solid #ddd;        /* Light border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 700px;             /* Limit width for readability */
+  line-height: 1.6;             /* Improve readability */
+}
+
+.resume-section h2 {
+  font-size: 1.6rem;             /* Larger heading size */
+  color: #333;                  /* Darker heading color */
+  border-bottom: 2px solid #ccc; /* Underline for headings */
+  padding-bottom: 5px;          /* Spacing below heading */
+  margin-bottom: 10px;          /* Spacing below heading */
+}
+
+.resume-section li {
+  color: #555;
+  margin-bottom: 6px;    /* Spacing between list items */         
+}
+
+/* Dark Mode version of resume sections */
+
+body.dark .resume-section {
+  background-color: #2b2b2b;       /* Dark gray background */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Slightly darker shadow */
+  border: 1px solid #444;          /* Dark border */
+  color: #e0e0e0;                  /* Light text */
+}
+
+body.dark .resume-section h2 {
+  color: #ffffff;                  /* White headings */
+  border-bottom: 2px solid #666;    /* Darker underline for headings */
+  padding-bottom: 5px;             /* Spacing below heading */
+}
+
+body.dark .resume-section li {
+  color: #e0e0e0;                  /* Light text for paragraphs */
+  margin-bottom: 6px;             /* Spacing between list items */
+}
+
+.skills-table {
+  width: 100%;                  /* Full width */
+  border-collapse: collapse;    /* Remove spacing between cells */
+  margin-top: 20px 0;             /* Spacing above the table */
+}
+
+.skills-table th, .skills-table td {
+  border: 1px solid #ddd;       /* Light border */
+  padding: 10px;                /* Cell padding */
+  text-align: left;             /* Align text to the left */
+}
+
+.skills-table th {
+  background-color: #7e7d7d;    /* Light gray background for headers */
+  font-weight: bold;            /* Bold text for headers */
+  line-height: 1.5;             /* Improve readability */
+}
+
+.skills-section {
+  max-width: 800px;             /* Limit width for readability */
+  margin: 0 auto;            /* Centered */
+  margin-bottom: 50px;         /* Spacing below section */
+  line-height: 1.5;             /* Improve readability */
+}
+
+.skills-section h2 {
+  text-align: center;           /* Centered heading */
+  margin-bottom: 20px;         /* Spacing below heading */
+  text-decoration: underline;      /* Underline for heading */
+  margin-bottom: 15px;                 /* Spacing below heading */
+}
+
+.skills-section {
+  background-color: #f9f9f9;  /* Light background */
+  padding: 20px;                /* Spacing */
+  border-radius: 12px;           /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 20px auto;
+}
+
+.about-section {
+  max-width: 800px;             /* Limit width for readability */
+  margin: 30px auto;            /* Centered */
+  padding: 25px ;                /* Spacing */
+  background-color: #f9f9f9;  /* Light background */
+  border-radius: 12px;           /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  line-height: 1.6;             /* Improve readability */
+}
+.about-section h2 {
+  text-align: center;           /* Centered heading */
+  margin-bottom: 15px;         /* Spacing below heading */
+  text-decoration: underline;      /* Underline for heading */
+}
+
+.quote-section {
+  max-width: 800px;             /* Limit width for readability */
+  margin: 30px auto;            /* Centered */
+  padding: 25px;                /* Spacing */
+  background-color: #f9f9f9;    /* Light background */
+  border-radius: 12px;           /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.quote-section h2 {
+  text-align: center;           /* Centered heading */
+  margin-bottom: 15px;         /* Spacing below heading */
+  font-weight: bold;           /* Bold the heading */
+  text-decoration: underline;      /* Underline for heading */
+}
+/* Dark Mode About Section */
+.dark .about-section, .dark .quote-section {
+ background-color: #2b2b2b;       /* Dark gray background */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Slightly darker shadow */
+  border: 1px solid #444;          /* Dark border */
+  color: #e0e0e0;                  /* Light text */
+}
+
+
+/* Contact Page Styling */
+.contact-section {
+  max-width: 600px;             /* Limit width for readability */
+  margin: 30px auto;            /* Centered */
+  padding: 50px;                /* Spacing */
+  background-color: #f9f9f9;    /* Light background */
+  border-radius: 12px;           /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  line-height: 1.6;             /* Improve readability */
+}
+
+.contact-section h2 {
+  text-align: center;           /* Centered heading */
+  margin-bottom: 10px;         /* Spacing below heading */
+  text-decoration: underline;      /* Underline for heading */
+}
+
+.contact-section p {
+  text-align: center;           /* Centered text */
+  margin-bottom: 20px         /* Spacing below paragraph */
+  line-height: 1.5;             /* Improve readability */
+}
+
+.form-group {
+  margin-bottom: 15px;          /* Spacing between form groups */
+}
+
+>form-group label {
+  display: block;               /* Block display for labels */
+  margin-bottom: 6px;          /* Spacing below labels */
+  font-weight: bold;           /* Bold text for labels */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;                  /* Full width */
+  padding: 10px;                /* Padding inside inputs */
+  border: 1px solid #ccc;       /* Light border */
+  border-radius: 4px;           /* Rounded corners */
+  font-size: 1rem;              /* Font size */
+}
+
+button[type="submit"] {
+  display: block;               /* Block display for button */
+  width: 100%;                  /* Full width */
+  padding: 12px;                /* Padding inside button */
+  background-color: #007BFF;    /* Primary color */
+  color: white;                 /* White text */
+  border: none;                 /* Remove border */
+  border-radius: 6px;           /* Rounded corners */
+  font-size: 1rem;              /* Font size */
+  cursor: pointer;              /* Pointer cursor on hover */
+  transition: background-color 0.2s ease; /* Smooth transition */
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;    /* Darker shade on hover */
+}
+
+#formStatus {
+  margin-top: 15px;             /* Spacing above status message */
+  text-align: center;           /* Centered text */
+  font-weight: bold;            /* Bold text */
+}
+
+.contact-icons img {
+  width: 40px;                  /* Icon size */
+  height: 40px;                 /* Icon size */
+  margin: 0 10px;               /* Spacing between icons */
+  transition: transform 0.2s;   /* Smooth transition for hover effect */
+}
+
+ 
+
+/* Dark Mode Contact Section */
+.dark .contact-section {
+ background-color: #2b2b2b;       /* Dark gray background */
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Slightly darker shadow */
+  border: 1px solid #444;          /* Dark border */
+  color: #e0e0e0;                  /* Light text */
+}
+
+.dark .contact-icons img[alt="GitHub"] {
+  filter: invert(1) brightness(1.2);           /* Invert GitHub icon for dark mode */
+}
+
+
+
+/* Navigation Bar Styling */
+.navbar a {
+  display: inline-block;        /* Inline block for spacing */
+  padding: 8px 14px;           /* Spacing around links */
+  margin: 0 6px;               /* Horizontal spacing between links */
+  background-color: #357abd;  /* Light background for links */
+  color: white;                 /* White text */
+  text-decoration: none;        /* Remove underline */
+  border-radius: 6px;           /* Rounded corners */
+  font-weight: bold;               /* Bold text */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+}
+
+.navbar a:hover {
+  background-color: #285f8f;    /* Darker shade on hover */
+  transform: scale(1.05);        /* Slightly enlarge on hover */
+}
+
+/* Dark Mode Base*/
+.dark {
+  background-color: #121212;  /* Dark background */
+  color: #e0e0e0;             /* Light text color */
+}
+
+/*Dark Mode Sections */
+.dark section {
+  background-color: #1e1e1e;  /* Darker background for sections */
+  color: #e0e0e0;                     /* White text for contrast */
+  border-color: #333;                 /* Dark border for sections */
+}
+
+/* Dark Mode Button */
+.dark button {
+  background-color: #333;     /* Dark button background */
+  color: #e0e0e0;             /* Light text color */
+  border: 1px solid #555;     /* Dark border for button */
+}
+
+/* Dark Mode Inputs */
+.dark input,
+.dark textarea {
+  background-color: #2a2a2a;  /* Dark input background */
+  color: #e0e0e0;             /* Light text color */
+  border: 1px solid #555;     /* Dark border for inputs */
+}
+
+
+

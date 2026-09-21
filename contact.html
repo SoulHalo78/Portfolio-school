@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Jeremy Graphenteen</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="skills.html">Skills</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+
+            <button id="darkToggle" aria-label="Toggle dark mode">Toggle Dark Mode</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--Contact section added to provide a way for visitors to reach out -->
+        <section class="contact-section">
+            <h2>Get in Touch</h2>
+
+            <p>If you have any questions or would like to discuss potential opportunities, feel free to reach out!</p>
+
+            <form id="contactForm" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <p id="formstatus"></p>
+        </section>
+        <div class="contact-icons">
+            <a href="mailto:jpg78@msn.com" class="contact icon" aria-label="Email">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+            <a href="https://www.linkedin.com/in/jeremy-graphenteen-55b023a7" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/SoulHalo78" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jeremy Graphenteen.</p>
+    </footer>
+</body>
+</html>
