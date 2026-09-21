@@ -24,15 +24,23 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Motivational Quote API feature
-fetch('https://api.quotable.io/random')
-    .then(res => res.json())
-    .then(data => {
+document.addEventListener("DOMContentLoaded", () => {
+    async function loadQuote() {
+        const quoteElement = document.getElementById("quote");
 
-        document.getElementById('quote').textContent = data.content + "-" + data.author;
-    })
-    .catch(() => {
-        document.getElementById('quote').textContent = 'Stay positive and keep moving forward!';
-    });
+        try {
+            const response = await fetch("https://api.quotable.io/random");
+            const data = await response.json();
+
+            quoteElement.textContent = `${data.content} — ${data.author}`;
+        } catch (error) {
+            quoteElement.textContent = "Stay positive and keep moving forward!";
+        }
+    }
+
+    loadQuote();
+});
+
 
     //GitHub API feature to display recent repositories
 document.addEventListener("DOMContentLoaded", () => {
