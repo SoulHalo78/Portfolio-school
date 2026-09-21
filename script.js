@@ -45,21 +45,26 @@ document.addEventListener("DOMContentLoaded", () => {
     //GitHub API feature to display recent repositories
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById('github-projects');
-    const username = container.getAttribute('data-user');
 
-    fetch(`https://api.github.com/users/${username}/repos`)
-        .then(response => response.json())
-        .then(data => {
-            container.innerHTML = "No public GitHub projects yet."; // Clear the loading text
+    // Only run this section if the element exists
+    if (container) {
+        const username = container.getAttribute('data-user');
 
-            data.slice(0, 5).forEach(repo => { // Display only the first 5 repositories
-                const item = document.createElement("p");
-                item.textContent = repo.name;
-                container.appendChild(item);
+        fetch(`https://api.github.com/users/${username}/repos`)
+            .then(response => response.json())
+            .then(data => {
+                container.innerHTML = "No public GitHub projects yet.";
+
+                data.slice(0, 5).forEach(repo => {
+                    const item = document.createElement("p");
+                    item.textContent = repo.name;
+                    container.appendChild(item);
+                });
+            })
+            .catch(error => {
+                container.innerHTML = "Unable to load GitHub projects.";
+                console.error(error);
             });
-        })
-        .catch(error => {
-            container.innerHTML = "Unable to load GitHub projects.";
-            console.error(error);
-        });
+    }
 });
+
